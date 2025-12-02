@@ -85,11 +85,11 @@ header nav {
 
 header nav a {
     text-decoration: none;
-    background-color: #000;
+    background-color: #FFF;
     padding: 10px;
     border-radius: 30px;
     font-family: "Rammetto One", sans-serif;
-    color: #BAE4FF;
+    color: #000;
     font-size: clamp(1em, 1.3vw, 3rem);
     box-shadow: 0px 4px 0 #7EAEBE;
     transition: 0.2s;
@@ -388,3 +388,4 @@ main #Welcome>p {
     }
 
 }
+
