@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/produtos.css">
+    <link rel="icon" type="image/png" href="../imagens/Logo.png">
+      <link rel="shortcut icon" href="../imagens/favicon.png" type="image/x-icon" />
+    <title>Loja</title>
+</head>
+
+<body>
+    <header>
+        <div class="menu-btn" id="menuBtn">☰</div>
+    <nav id="menu">
+      <a href="../index.html">Empresa</a>
+      <a href="../pags/evento.html">Eventos</a>
+      <a href="../pags/cosplay.html">Cosplay</a>
+      <a href="../pags/animes.html">Animes</a>
+      <a href="../pags/manga.html">Mangás</a>
+      <a href="../pags/blog.html">Blog</a>
+      <a href="../pags/produtos.html">Loja</a>
+      <a href="../pags/form.html">Contato</a>
+    </nav>
+    </header>
+    <main>
+        <h1>Produtos Oficiais</h1>
+        <section id="produtos">
+            <div class="produto">
+                <img src="../imagens/produtos/bonec.png" alt="Foto do produto">
+                <div>
+                    <strong>Boneca Cyber Crew</strong>
+                    <a href="#">Comprar</a>
+                </div>
+            </div>
+            <div class="produto">
+                <img src="../imagens/produtos/bag.png" alt="Foto do produto">
+                <div>
+                    <strong>Ecobag Cyber Crew</strong>
+                    <a href="#">Comprar</a>
+                </div>
+            </div>
+            <div class="produto">
+                <img src="../imagens/produtos/moletom.png" alt="Foto do produto">
+                <div>
+                    <strong>Moletom Cyber Crew</strong>
+                    <a href="#">Comprar</a>
+                </div>
+            </div>
+            <div class="produto">
+                <img src="../imagens/produtos/blusa.png" alt="Foto do produto">
+                <div>
+                    <strong>Camisa Cyber Crew</strong>
+                    <a href="#">Comprar</a>
+                </div>
+            </div>
+            <div class="produto">
+                <img src="../imagens/produtos/muie.png" alt="Foto do produto">
+                <div>
+                    <strong>Cosplay Cyber Crew</strong>
+                    <a href="#">Comprar</a>
+                </div>
+            </div>
+            <div class="produto">
+                <img src="../imagens/produtos/crianca.png" alt="Foto do produto">
+                <div>
+                    <strong>Cosplay Kids Cyber Crew</strong>
+                    <a href="#">Comprar</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        const btn = document.getElementById("menuBtn");
+        const menu = document.getElementById("menu");
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("ativo");
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,177 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "Rammetto One";
+    src: url("../fonts/Rammetto_One/RammettoOne-Regular.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "Rubik Bubbles";
+    src: url("../fonts/rubik-bubbles/RubikBubbles-Regular.ttf") format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 7vw;
+    font-family: "Rubik Bubbles", system-ui;
+    text-align: center;
+    color: #F5FDFF;
+    margin: 20px 0;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+a,
+strong {
+    font-family: "Rammetto One", sans-serif;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.274);
+}
+
+body {
+    background: #EAF8FF url("../imagens/produtos/FUndo.jpeg") center top/cover fixed no-repeat;
+}
+
+header nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background-color: #BAE4FF;
+    width: 95%;
+    margin: 20px auto;
+    padding: 15px;
+}
+
+header nav a {
+    text-decoration: none;
+    background-color: #FFF;
+    padding: 10px;
+    border-radius: 30px;
+    font-family: "Rammetto One", sans-serif;
+    color: #BAE4FF;
+    font-size: clamp(1em, 1.3vw, 3rem);
+    box-shadow: 0px 4px 0 #7EAEBE;
+    transition: 0.2s;
+}
+
+header nav a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 0 #7EAEBE;
+    transition: 0.2s;
+}
+
+main {
+    width: 90%;
+    margin: 8px auto 40px;
+    border-radius: 18px;
+    background: linear-gradient(hsla(202, 69%, 86%, 0.75), hsl(202, 71%, 92%, 0.75));
+    box-shadow: 0 10px 40px rgba(17, 40, 80, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+#produtos {
+    width: 90%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 35px;
+}
+
+.produto {
+    background: #ffffff;
+    border-radius: 30px;
+    padding: 25px 20px 30px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    text-align: center;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.18);
+    transition: 0.3s;
+}
+
+.produto:hover {
+    transform: scale(1.04);
+}
+
+.produto img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.produto strong {
+    display: block;
+    margin-top: 10px;
+    font-size: 20px;
+    color: #CAEEEC;
+}
+
+
+.produto a {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 35px;
+    background: #CAEEEC;
+    color: #FFF;
+    text-decoration: none;
+    font-weight: 800;
+    border-radius: 20px;
+    box-shadow: 0px 4px 0 #7EAEBE;
+    transition: 0.2s;
+}
+
+.produto a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 0 #7EAEBE;
+}
+
+.menu-btn {
+    display: none;
+}
+
+@media (max-width: 994px) {
+    .menu-btn {
+        font-size: 7vw;
+        cursor: pointer;
+        z-index: 999;
+        display: block;
+        position: fixed;
+        top: 5px;
+        left: 10px;
+        user-select: none;
+        padding: 10px;
+        backdrop-filter: blur(2px);
+        border-radius: 20px;
+    }
+
+    #menu {
+        position: fixed;
+        top: -20px;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        background: rgba(166, 217, 231, 0.97);
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 25px;
+        padding: 100px 20px;
+        transition: 0.3s;
+    }
+
+    #menu a {
+        text-decoration: none;
+        font-size: 5vw;
+        font-weight: 700;
+        color: #fff;
+        text-shadow: 2px 2px #7CAEC3, -0px -0px 4px black;
+        text-align: center;
+    }
+
+    #menu.ativo {
+        left: 0;
+    }
+}

@@ -1,0 +1,25 @@
+
+
+
+
+.cont{
+    background-color: #b82b2b;
+    background: linear-gradient(to bottom, #b82b2b 0%, #3a0404 100%);
+    border-radius: 143px;
+    box-shadow: #f10e0e 1px 5px 15px;
+
+}
+    .carrossel {
+    background-color: #b82b2b;
+    background: linear-gradient(to bottom, #b82b2b 0%, #3a0404 100%);
+}
+
+
+
+
+.txt{
+    font-size: 40px;
+    font-family: "Rubik Bubbles", sans-serif;
+    max-width: 300px;
+    color: #350808;
+}

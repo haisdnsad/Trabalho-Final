@@ -1,0 +1,389 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "Rammetto One";
+    src: url("../fonts/Rammetto_One/RammettoOne-Regular.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "Abhaya Libre";
+    src: url("../fonts/Abhaya-Libre-Font/AbhayaLibre-ExtraBold.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "Rubik Bubbles";
+    src: url("../fonts/rubik-bubbles/RubikBubbles-Regular.ttf") format('truetype');
+}
+
+
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+h1, h2 {
+    font-family: "Rubik Bubbles", system-ui;
+}
+
+h1, h2, h3, h4, h5, h6, p, strong, a {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.274);
+}
+h3, h4, h5, h6, strong, a{
+    font-family: "Rammetto One", sans-serif;
+}
+
+h3 {
+    color: #AEE1E4;
+    font-size: 5vw;
+    text-align: center;
+}
+
+h4 {
+    font-size: 3vw;
+    color: #FFF;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p {
+    font-family: "Abhaya Libre", serif;
+    text-align: justify;
+    font-size: clamp(1.3em, 2vw, 4rem);
+}
+
+li {
+    font-family: "Abhaya Libre", serif;
+    font-size: clamp(1.4em, 2vw, 4rem);
+    list-style-position: inside;
+}
+
+strong {
+    font-family: "Rammetto One", sans-serif;
+    color: white;
+}
+
+body {
+    background-color: #A6CFE3;
+}
+
+main {
+    width: 90%;
+    margin: auto;
+}
+
+
+header nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background-color: #BAE4FF;
+    width: 95%;
+    margin: 20px auto;
+    padding: 15px;
+}
+
+header nav a {
+    text-decoration: none;
+    background-color: #FFF;
+    padding: 10px;
+    border-radius: 30px;
+    font-family: "Rammetto One", sans-serif;
+    color: #BAE4FF;
+    font-size: clamp(1em, 1.3vw, 3rem);
+    box-shadow: 0px 4px 0 #7EAEBE;
+    transition: 0.2s;
+}
+
+header nav a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 0 #7EAEBE;
+    transition: 0.2s;
+}
+
+header .topo {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-content: center;
+    width: 100%;
+}
+
+header .topo img {
+    width: 45%;
+}
+
+header .topo h1 {
+    font-size: 15vw;
+    color: #AEE1E4;
+}
+
+main #Slide {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.432);
+    width: 95%;
+    height: 80vh;
+    margin: auto;
+    overflow: hidden;
+    background-color: black;
+    border-radius: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+main #Slide img {
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    border-radius: 40px;
+    animation: slide 18s infinite alternate;
+    animation-timing-function: steps(6);
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-600%);
+    }
+}
+
+main #Welcome h2 {
+    color: #FFF;
+    text-align: center;
+    font-size: clamp(3em, 5vw, 6rem);
+}
+
+main #Welcome>p {
+    font-family: "Rammetto One", sans-serif;
+    text-align: end;
+    color: #AEE1E4;
+    font-size: clamp(1.7em, 3vw, 4rem);
+}
+
+.conteudo {
+    margin: 20px 0;
+    background-color: #AEE1E4;
+    padding: 3%;
+    border-radius: 35px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.178);
+}
+
+#Sede>.conteudo {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 10px;
+}
+
+#Sede img {
+    width: 60%;
+}
+
+#Sede div {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+#Sede div strong {
+    font-size: clamp(1.7em, 2vw, 4rem);
+}
+
+#Sede div li {
+    line-height: 600%;
+}
+
+#Sede div address {
+    align-self: center;
+    font-size: clamp(1em, 2vw, 4rem)
+}
+
+#MVV li {
+    margin-top: 10px;
+    text-align: justify;
+}
+
+#Nos .membro {
+    margin-top: 2%;
+    width: 40%;
+    background-color: #AEE1E4;
+    border-radius: 15px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.178);
+}
+
+#Nos>div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+}
+
+#Nos figure {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+#Nos figure strong {
+    font-size: 2vw;
+}
+
+#Nos figure img {
+    margin-top: 5px;
+    width: 48%;
+    border-radius: 15px;
+}
+
+#Nos figure figcaption {
+    min-width: 115px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#Nos #redes {
+    border-top: 1px solid black;
+    margin-top: 5px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: end;
+}
+
+#Nos #redes img {
+    margin-top: 5px;
+    height: 40px;
+}
+
+
+.menu-btn {
+    display: none;
+}
+
+@media (max-width: 994px) {
+    .menu-btn {
+        font-size: 7vw;
+        cursor: pointer;
+        z-index: 999;
+        display: block;
+        position: fixed;
+        top: 5px;
+        left: 10px;
+        user-select: none;
+        padding: 10px;
+        backdrop-filter: blur(2px);
+        border-radius: 20px;
+    }
+
+    #menu {
+        position: fixed;
+        top: -20px;
+        left: -110%;
+        width: 100%;
+        height: 100vh;
+        background: rgba(166, 217, 231, 0.97);
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 25px;
+        padding: 100px 20px;
+        transition: 0.3s;
+    }
+
+    #menu a {
+        text-decoration: none;
+        font-size: 5vw;
+        font-weight: 700;
+        color: #fff;
+        text-shadow: 2px 2px #7CAEC3, -0px -0px 4px black;
+        text-align: center;
+    }
+
+    #menu.ativo {
+        left: -3%;
+        z-index: 900;
+    }
+
+    header .topo {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    header .topo img {
+        width: 55%;
+    }
+
+    header .topo h1 {
+        font-size: 20vw;
+        text-align: center;
+    }
+
+    main #Slide {
+        display: flex;
+        flex-flow: row nowrap;
+        height: auto;
+    }
+
+    main #Slide img {
+        height: auto;
+    }
+
+    main #Slide figcaption {
+        font-size: 3vw;
+        margin-top: 10px;
+    }
+
+    .conteudo {
+        padding: 20px;
+    }
+
+    main #Welcome>p {
+        text-align: center;
+    }
+
+    #Sede>.conteudo {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #Sede img {
+        width: 90%;
+    }
+
+    #Sede div address {
+        text-align: center;
+    }
+
+    #MVV .conteudo {
+        margin-top: 30px;
+    }
+
+    #Nos>div {
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+    }
+
+    #Sede div li {
+        line-height: 3em;
+    }
+
+    #Nos .membro {
+        width: 90%;
+    }
+
+    #Nos figure img {
+        width: 60%;
+    }
+
+    #Nos figure figcaption strong {
+        font-size: 6vw;
+    }
+
+    #Nos #redes img {
+        height: 30px;
+    }
+}
