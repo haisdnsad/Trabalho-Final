@@ -288,19 +288,6 @@ header nav a:hover::after {
   transform: rotate(8deg);
 }
 
-.sc {
-  width: 180px;
-  left: 300px;
-  bottom: 1600px;
-  transform: rotate(-6deg);
-}
-
-.sd {
-  width: 180px;
-  right: 250px;
-  bottom: 2800px;
-  transform: rotate(-6deg);
-}
 
 .tipo::before {
   content: "";
@@ -515,4 +502,5 @@ main>a:hover {
 
 #dica .conteudo h4 {
   color: #9DADFF !important;
+
 }
