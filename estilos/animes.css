@@ -1,4 +1,15 @@
 *{ margin:0; padding:0; }
+
+@font-face {
+    font-family: "Rammetto One";
+    src: url("../fonts/Rammetto_One/RammettoOne-Regular.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "Rubik Bubbles";
+    src: url("../fonts/rubik-bubbles/RubikBubbles-Regular.ttf") format('truetype');
+}
+
 body{
   background-image:url("imagens/img/fundo.png");
 }
@@ -562,3 +573,4 @@ header nav a:hover::after{
     border-radius: 50px;
 
 }
+
