@@ -3,9 +3,9 @@ function animação() {
     // const ipersso = 1 // Variável não utilizada e removida
 
     const imagens = [
-        'img/naruto titulo.png',
-        'img/jujutsu kaisen titulo.png',
-        'img/one piece titulo.png'
+        'imagens/img/naruto titulo.png',
+        'imagens/img/jujutsu kaisen titulo.png',
+        'imagens/img/one piece titulo.png'
     ];
     const descricoes = [
         `<strong>Naruto</strong> é a saga épica de um ninja que transformou a rejeição em <strong>esperança</strong>.<br><br>
@@ -211,5 +211,6 @@ Luffy é a prova de que com <strong>determinação</strong>, coragem e lealdade,
     renderizar();
     iniciarCarrosselPersonagens();
 }
+
 
 animação();
