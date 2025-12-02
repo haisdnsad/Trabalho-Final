@@ -18,7 +18,7 @@ header nav {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    background-color: #a8d0e9;
+    background-color: #0f0e0e;
     width: 95%;
     margin: 20px auto;
     padding: 15px;
@@ -573,5 +573,6 @@ header nav a:hover::after{
     border-radius: 50px;
 
 }
+
 
 
