@@ -29,6 +29,36 @@
     </nav> </header>
 
 <body>
+
+    <div class="form">
+        <h2>Contato</h2>
+        <form action="https://formspree.io/f/mqarbbko" method="POST">
+ 
+             <label for="email">Seu e-mail</label>
+                <input type="email" id="email" name="email" required>
+                
+            <label for="mensagem">Assunto </label>
+            <input type="text" id="mensagem" name="mensagem" required></input>
+
+            <label for="foto">Anexar foto  📷 </label>
+            <input type="file" id="foto" name="foto" accept="image/*" hidden>
+
+            <span id="arq">Nenhum arquivo selecionado</span>
+           
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <script>
+        const foto = document.getElementById('foto')
+        const arquivo = document.getElementById('arq')
+
+        foto.addEventListener('change', function() {
+            arquivo.textContent =  this.files[0]?.name || 'Nenhum arquivo selecionado'
+        }) 
+             
+    </script>
     
 </body>
+
 </html>
