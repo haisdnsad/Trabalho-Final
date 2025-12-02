@@ -62,11 +62,12 @@ button:hover {
 }
 
 
+
 header nav {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    background-color: #a33dcf;
+    background-color: #092147;
     width: 95%;
     margin: 20px auto;
     padding: 15px;
@@ -172,5 +173,5 @@ header nav a:hover::after{
         text-align: center;
         padding: 10px 12px;
     }
-
 }
+
