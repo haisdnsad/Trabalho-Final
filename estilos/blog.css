@@ -165,7 +165,7 @@ body{
   width: calc(100% - 30px);
   max-width: none;
   margin: 0 auto;
-  background-image: url('imgA/f2.jpg');
+  background-image: url('../imagens/imgA/f2.jpg');
   background-size: cover;
   background-position: center;
   padding: 28px;
@@ -314,4 +314,5 @@ body{
   .card-body{ width:100%;}
   .card-text{ max-width:100%; }
   .top-nav ul{ gap:8px; }
+
 }
