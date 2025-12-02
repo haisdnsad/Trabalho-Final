@@ -1,0 +1,563 @@
+*{ margin:0; padding:0; }
+body{
+  background-image:url("img/fundo.png");
+}
+/* ---- barra de navegação ---- */
+header nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background-color: #a8d0e9;
+    width: 95%;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 18px;
+    position: relative;
+}
+
+/* brilho neon permanente no retângulo dos botões */
+header nav::after{
+    content: "";
+    position: absolute;
+    inset: -6px;
+    border-radius: 22px;
+    pointer-events: none;
+    background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.08) 10%, rgba(255,255,255,0.18) 30%, rgba(255,255,255,0.08) 60%, transparent 100%);
+    box-shadow: 0 0 20px 2px rgba(255,255,255,0.12);
+    mix-blend-mode: screen;
+    z-index: -1;
+}
+
+/* botões do menu */
+header nav a {
+    text-decoration: none;
+    background-color: #FFF;
+    padding: 10px 14px;
+    border-radius: 30px;
+    font-family: "Rammetto One", sans-serif;
+    color: #000000;
+    font-size: clamp(.9rem, 1.2vw, 1.6rem);
+    transition: transform .25s ease, box-shadow .25s ease;
+    position: relative;
+    z-index: 1;
+}
+
+/* hover: leve zoom + brilho neon */
+header nav a:hover{
+    transform: scale(1.07);
+    box-shadow:
+        0 6px 18px rgba(0,0,0,0.15),
+        0 0 18px 2px rgba(255,255,255,0.18),
+        0 0 6px 1px rgba(255,255,255,0.6) inset;
+    color: #000;
+}
+
+/* contorno brilhante animado ao redor do botão */
+header nav a::after{
+    content: "";
+    position: absolute;
+    inset: -4px;
+    border-radius: 26px;
+    pointer-events: none;
+    opacity: 0;
+    box-shadow: 0 0 18px 2px rgba(255,255,255,0.08);
+    transition: opacity .25s ease, transform .25s ease;
+    transform: scale(.98);
+    mix-blend-mode: screen;
+}
+header nav a:hover::after{
+    opacity: 1;
+    transform: scale(1.02);
+}
+
+/* ---- botão do menu (mobile) ---- */
+.menu-btn {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 7vw;
+    cursor: pointer;
+    z-index: 999;
+    color: black;
+}
+
+/* ---- responsividade para menu mobile ---- */
+@media (max-width: 800px) {
+    header {
+        position: relative;
+    }
+    .menu-btn {
+        display: block;
+        position: fixed;
+        top: 5px;
+        left: 10px;
+    }
+
+    header nav {
+        display: none;
+        flex-direction: column;
+        gap: 12px;
+        background-color: #BAE4FF;
+        width: 94%;
+        padding: 16px;
+        border-radius: 18px;
+        right: 10px;
+        position: fixed;
+        top: 50px;
+        z-index: 1000;
+        box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.18);
+    }
+
+    header nav.ativo {
+        display: flex;
+    }
+
+    header nav a {
+        font-size: 4vw;
+        text-align: center;
+        padding: 10px 12px;
+    }
+}
+
+/* Estilos para o tema NARUTO (Laranja) */
+[data-persso="naruto"] {
+    /* Cor de borda principal do tema */
+    --cor-tema-principal: 255, 124, 17; 
+}
+
+/* Estilos para o tema SASUKE (Roxo/Azul) */
+[data-persso="sasuke"] {
+    /* Cor de borda principal do tema */
+    --cor-tema-principal: 255, 124, 17; 
+}
+
+/* Estilos para o tema SAKURA (Rosa/Verde) */
+[data-persso="sakura"] {
+    /* Cor de borda principal do tema */
+    --cor-tema-principal: 255, 124, 17; 
+}
+
+.back{
+  background-image:url("img/fundo.png");
+  min-height: 100vh;
+  background-color: rgba(0,0,0,0.9);
+  display:flex; flex-direction:column;
+}
+
+.titulo{ display:flex; justify-content:center; }
+
+.tituloimg{ width:400px; height:180px; margin-top:30px; }
+
+.geral{ display:flex; flex-direction:column; align-items:center; }
+
+.conteudo{
+  position: relative;
+  background-color: #0f0e0e;
+  opacity: 95%;
+  width: 90%;
+  height: 2800px;
+  border-radius: 50px;
+  box-shadow: 2px 2px 20px 10px rgb(255,124,17);
+  margin-top: 120px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  transition: 
+    transform 0.4s cubic-bezier(.88,.44,.44,1),
+    box-shadow 0.4s ease,
+    background-image 0.4s ease;
+}
+.conteudosub{
+  display: flex;
+  flex-direction: row;
+  height: 850px;
+}
+
+.subConteudo{
+  flex-direction: column;
+}
+
+.descrição{
+  background-color: #0f0e0e;
+  width: 750px;
+  margin-left: 80px;
+}
+
+.descrição {
+  width: 90%;
+  max-width: 750px;
+  margin-left: 80px;
+  margin-top: -30px;
+  text-align: justify;
+  line-height: 1.2;
+}
+
+.texto {
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  font-weight: 300;
+  color: #e5e5e5;
+  font-size: 23px;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.6);
+}
+
+.texto strong {
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  transition: color 0.3s ease;
+}
+
+.descrição[data-glow="naruto"] .texto strong {
+  color: #ff7c11; 
+}
+
+.descrição[data-glow="roxo"] .texto strong {
+  color: rgb(170, 3, 39); 
+}
+
+.descrição[data-glow="azul"] .texto strong {
+  color: rgb(0, 117, 221); 
+}
+
+.direito{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-left: 200px;
+}
+
+.icons{
+  background-size: cover;
+  width: 600px;
+  height: 600px;
+  border-radius: 40px;
+  overflow: hidden;
+
+  transition: 
+    transform 0.4s cubic-bezier(.22,.22,.22,22),
+    box-shadow 0.4s ease,
+    background-image 0.4s ease;
+
+  animation: pulsar-sombra 2s ease-in-out infinite alternate;
+}
+
+.icons[data-offset="naruto"] {
+    background-image: url("img/narutoanime.png");
+    /* 1. Define a cor como uma variável */
+    --shadow-color: 255, 124, 17; /* Laranja (RGB) */
+    box-shadow: 2px 2px 30px 5px rgb(var(--shadow-color));
+}
+
+.icons[data-offset="roxo"] {
+    background-image: url("img/jujutsuanime.png");
+    /* 1. Define a cor como uma variável */
+    --shadow-color: 170, 3, 39; /* Roxo/Vermelho Escuro (RGB) */
+    box-shadow: 2px 2px 30px 5px rgb(var(--shadow-color));
+}
+
+.icons[data-offset="azul"] {
+    background-image: url("img/onepieceanime.png");
+    /* 1. Define a cor como uma variável */
+    --shadow-color: 4, 31, 184; /* Azul (RGB) */
+    box-shadow: 2px 2px 30px 5px rgb(var(--shadow-color));
+}
+
+.conteudo[data-offset="naruto"]{
+  box-shadow: 2px 2px 30px 5px rgb(255,124,17);
+}
+
+.conteudo[data-offset="roxo"]{
+  box-shadow: 2px 2px 30px 5px rgb(170, 3, 39);
+}
+
+.conteudo[data-offset="azul"]{
+  box-shadow: 2px 2px 30px 5px rgb(4, 31, 184);
+}
+
+@keyframes pulsar-sombra {
+    0% {
+        /* A sombra começa "apagada" (opacidade 0) */
+        /* Note o uso da variável RGB e a opacidade 0 */
+        box-shadow: 2px 2px 15px 0px rgba(var(--shadow-color), 0); 
+    }
+    50% {
+        /* Ponto médio: brilho máximo com opacidade total */
+        /* Aumentamos o tamanho e spread para dar o efeito de "ascender" */
+        box-shadow: 2px 2px 45px 10px rgba(var(--shadow-color), 1);
+    }
+    100% {
+        /* Volta a ser menos intenso para um efeito suave antes de inverter */
+        box-shadow: 2px 2px 30px 5px rgba(var(--shadow-color), 0.7);
+    }
+}
+
+@keyframes zoomInLaranja {
+  from { transform: scale(0.9); opacity: 0.7; }
+  to   { transform: scale(1); opacity: 1; }
+}
+@keyframes zoomInAzul {
+  from { transform: scale(0.9); opacity: 0.7; }
+  to   { transform: scale(1); opacity: 1; }
+}
+@keyframes zoomInRoxo {
+  from { transform: scale(0.9); opacity: 0.7; }
+  to   { transform: scale(1); opacity: 1; }
+}
+@keyframes zoomInMarrom {
+  from { transform: scale(0.9); opacity: 0.7; }
+  to   { transform: scale(1); opacity: 1; }
+}
+@keyframes zoomInPreto {
+  from { transform: scale(0.9); opacity: 0.7; }
+  to   { transform: scale(1); opacity: 1; }
+}
+@keyframes zoomInRosa {
+  from { transform: scale(0.9); opacity: 0.7; }
+  to   { transform: scale(1); opacity: 1; }
+}
+
+.carousel-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: inherit;
+  transition: box-shadow .6s;
+  box-shadow: none;
+}
+
+/* Glow ativo apenas quando o card está no centro */
+.carousel-card[data-offset="0"][data-glow="naruto"]::after {
+  box-shadow: 0 0 0 3px rgba(255,124,17,.1), 0 0 30px 6px rgba(255,124,17,.55) inset;
+}
+
+.carousel-card[data-offset="0"][data-glow="roxo"]::after {
+  box-shadow: 0 0 0 3px rgba(170, 3, 39, 1), 0 0 30px 6px rgba(170, 3, 39, 0.55) inset;
+}
+
+.carousel-card[data-offset="0"][data-glow="azul"]::after {
+  box-shadow: 0 0 0 3px rgba(0, 91, 255, 1), 0 0 30px 6px rgba(0, 91, 255, 0.55) inset;
+}
+
+
+.carousel{
+  width: min(920px, 95%);
+  height: min(460px, 65vh);
+  margin-left: 40px; 
+}
+
+.carousel-stage{
+  width:100%;
+  height:100%;
+  perspective:1000px;
+}
+
+.carousel-card{
+  position:absolute;
+  top:50%; left:50%;
+  width:min(300px, 78%);
+  height:min(270px, 70%);
+  transform:translate(-50%,-50%);
+  border-radius:16px;
+  overflow:hidden;
+  background:#1b1b1b;
+  box-shadow:0 14px 40px rgba(0,0,0,.45);
+  transition:transform .55s cubic-bezier(.22,.61,.36,1),
+  opacity .55s, filter .55s;
+  will-change: transform, opacity, filter;
+  cursor:pointer;
+}
+.carousel-card img{
+  width:100%; height:100%; object-fit:contain;
+}
+
+.carousel-card[data-offset="0"]{
+  z-index: 30;
+  transform: translate(-50%,-50%) scale(1);
+}
+.carousel-card[data-offset="-1"]{
+  z-index: 20;
+  transform: translate(calc(-50% - 240px), -50%) rotateY(8deg) scale(.86);
+}
+.carousel-card[data-offset="1"]{
+  z-index: 20;
+  transform: translate(calc(-50% + 240px), -50%) rotateY(-8deg) scale(.86);
+}
+
+.carousel-card[data-offset="out"]{
+  opacity:0; pointer-events:none; z-index: 0;
+  transform: translate(-50%,-50%) scale(.6);
+}
+
+/*Rodapé*/
+.rodape {
+  background-color: #0f0e0e;
+  color: #ccc;
+  text-align: center;
+  padding: 25px 10px;
+  font-family: 'Poppins', sans-serif;
+  border-top: 2px solid rgba(255,124,17,0.5);
+
+}
+
+.rodape p {
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+.rodape a {
+  color: #ff7c11;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.rodape a:hover {
+  color: #ffae42;
+}
+
+.assinatura {
+  font-style: italic;
+  color: #888;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+.bloco-banner-principal {
+  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagemprinci{
+  width: 1200px;
+  height: 350px;
+  background-image: url("img/fundo perssonagens.png");
+  border-radius: 50px;
+  border-color: rgb(var(--cor-tema-principal));
+}
+   
+.imagemperso{
+  width: 589px;
+  height: 530px;
+  margin-left: 600px;
+  margin-top: -180px;
+}
+
+.seta {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-300%);
+    color: #FFF;
+    font-size: 4em;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    z-index: 10;
+}
+
+.esquerda { left: 60px; }
+.direita { right: 60px; }
+
+
+
+
+.secao-central-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    margin-top: 70px;
+}
+
+.bloco-imagens-laterais {
+    display: flex;
+    flex-direction: column;
+}
+
+.bloco-imagens-laterais-dentro{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.img-mini {
+    width: 221px;
+    height: 311px;
+    background-color:#808d99;
+    border-radius: 55px;
+    margin-bottom: 10px;
+    border-color: rgb(var(--cor-tema-principal));
+    box-shadow: 0 0 15px rgba(var(--cor-tema-principal), 0.8);
+    transition: all 0.3s;
+}
+/* Estilos para as imagens de fundo reais (apenas exemplos) */
+.img-naruto-azul { background-image: url("img/perssonagens/Rectangle 22.png"); }
+.img-kurama { background-image: url("img/perssonagens/Rectangle 33.png"); }
+.img-espiral { height: 87px; background-image: url("img/perssonagens/Rectangle 20.png"); background-color: beige; width: 468px;}
+
+
+/* Bloco de Pesquisas Recentes (Centro) */
+.bloco-pesquisas {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Bloco de Olhos (Direita) */
+.bloco-olhos-laterais {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.img-olho {
+    width: 507px;
+    height: 100px; /* Altura similar às imagens laterais */
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-size: cover;
+    background-position: center;
+    /* Olhos não tem a borda laranja na imagem original, mas sim uma borda preta */
+    border-color: rgb(var(--cor-tema-principal));
+    box-shadow: 0 0 15px rgba(var(--cor-tema-principal), 0.8);
+    transition: all 0.3s;
+}
+/* Estilos para as imagens de fundo reais (apenas exemplos) */
+.img-olho-naruto { background-image: url("img/perssonagens/Rectangle 19.png"); }
+.img-olho-sasuke { background-image: url("img/perssonagens/Rectangle 31.png"); }
+.img-olho-pain { background-image: url("img/perssonagens/Rectangle 32.png"); }
+
+
+/* -------------------------------------- */
+/* 3. Bloco Inferior (Banner do Pain) */
+/* -------------------------------------- */
+
+.bloco-banner-inferior {
+    border-color: rgb(var(--cor-tema-principal));
+    box-shadow: 0 0 15px rgba(var(--cor-tema-principal), 0.8);
+    transition: all 0.3s;
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.banner-pain-imagem {
+    width: 1530px;
+    height: 740px;
+    border-color: rgb(var(--cor-tema-principal));
+    box-shadow: 0 0 15px rgba(var(--cor-tema-principal), 0.8);
+    transition: all 0.3s;
+    border-radius: 50px;
+}
