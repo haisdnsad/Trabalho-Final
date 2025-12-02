@@ -11,7 +11,7 @@
 }
 
 body{
-  background-image:url("imagens/img/fundo.png");
+  background-image:url("../imagens/img/fundo.png");
 }
 /* ---- barra de navegação ---- */
 header nav {
@@ -150,7 +150,7 @@ header nav a:hover::after{
 }
 
 .back{
-  background-image:url("imagens/img/fundo.png");
+  background-image:url("../imagens/img/fundo.png");
   min-height: 100vh;
   background-color: rgba(0,0,0,0.9);
   display:flex; flex-direction:column;
@@ -253,21 +253,21 @@ header nav a:hover::after{
 }
 
 .icons[data-offset="naruto"] {
-    background-image: url("imagens/img/narutoanime.png");
+    background-image: url("../imagens/img/narutoanime.png");
     /* 1. Define a cor como uma variável */
     --shadow-color: 255, 124, 17; /* Laranja (RGB) */
     box-shadow: 2px 2px 30px 5px rgb(var(--shadow-color));
 }
 
 .icons[data-offset="roxo"] {
-    background-image: url("imagens/img/jujutsuanime.png");
+    background-image: url("../imagens/img/jujutsuanime.png");
     /* 1. Define a cor como uma variável */
     --shadow-color: 170, 3, 39; /* Roxo/Vermelho Escuro (RGB) */
     box-shadow: 2px 2px 30px 5px rgb(var(--shadow-color));
 }
 
 .icons[data-offset="azul"] {
-    background-image: url("imagens/img/onepieceanime.png");
+    background-image: url("../imagens/img/onepieceanime.png");
     /* 1. Define a cor como uma variável */
     --shadow-color: 4, 31, 184; /* Azul (RGB) */
     box-shadow: 2px 2px 30px 5px rgb(var(--shadow-color));
@@ -453,7 +453,7 @@ header nav a:hover::after{
 .imagemprinci{
   width: 1200px;
   height: 350px;
-  background-image: url("imagens/img/fundo perssonagens.png");
+  background-image: url("../imagens/img/fundo perssonagens.png");
   border-radius: 50px;
   border-color: rgb(var(--cor-tema-principal));
 }
@@ -514,9 +514,9 @@ header nav a:hover::after{
     transition: all 0.3s;
 }
 /* Estilos para as imagens de fundo reais (apenas exemplos) */
-.img-naruto-azul { background-image: url("imagens/img/perssonagens/Rectangle 22.png"); }
-.img-kurama { background-image: url("imagens/img/perssonagens/Rectangle 33.png"); }
-.img-espiral { height: 87px; background-image: url("imagens/img/perssonagens/Rectangle 20.png"); background-color: beige; width: 468px;}
+.img-naruto-azul { background-image: url("../imagens/img/perssonagens/Rectangle 22.png"); }
+.img-kurama { background-image: url("../imagens/img/perssonagens/Rectangle 33.png"); }
+.img-espiral { height: 87px; background-image: url("../imagens/img/perssonagens/Rectangle 20.png"); background-color: beige; width: 468px;}
 
 
 /* Bloco de Pesquisas Recentes (Centro) */
@@ -546,9 +546,9 @@ header nav a:hover::after{
     transition: all 0.3s;
 }
 /* Estilos para as imagens de fundo reais (apenas exemplos) */
-.img-olho-naruto { background-image: url("imagens/img/perssonagens/Rectangle 19.png"); }
-.img-olho-sasuke { background-image: url("imagens/img/perssonagens/Rectangle 31.png"); }
-.img-olho-pain { background-image: url("imagens/img/perssonagens/Rectangle 32.png"); }
+.img-olho-naruto { background-image: url("../imagens/img/perssonagens/Rectangle 19.png"); }
+.img-olho-sasuke { background-image: url("../imagens/img/perssonagens/Rectangle 31.png"); }
+.img-olho-pain { background-image: url("../imagens/img/perssonagens/Rectangle 32.png"); }
 
 
 /* -------------------------------------- */
@@ -573,4 +573,5 @@ header nav a:hover::after{
     border-radius: 50px;
 
 }
+
 
