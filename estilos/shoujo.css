@@ -48,3 +48,12 @@
     color: #470325;
 
 }
+
+@media (max-width: 768px) {
+  .fig1,
+  .fig11,
+  .fig111 {
+    display: none;
+  }
+}
+
