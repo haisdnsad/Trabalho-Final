@@ -322,11 +322,12 @@ header nav a:hover::after{
         padding: 8px;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .fig,
   .fig2,
   .fig3 {
     display: none;
   }
 }
+
 
