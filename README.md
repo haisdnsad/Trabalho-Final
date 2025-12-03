@@ -25,7 +25,7 @@ Explicação sobre o universo cosplay, regulamentos, critérios, categorias e pr
 Recomendações, destaques de temporadas, personagens marcantes e lançamentos. Inclui motivos para assistir e curiosidades do universo otaku.
 
 **5° — Mangás (Karina):**
-Recomendações com sinopses, autores, títulos clássicos e lançamentos. Inclui curiosidades editoriais e sugestões para novos leitores.
+Recomendações, incluindo os mangás mais famosos do momento. Atualizado para quem curte o universo mangá ou tem vontade de se tornar um Mangaká.
 
 **6° — Blog e Curiosidades (Ana Lygia):**
 Atualizações sobre cultura asiática, curiosidades geek, notícias e conteúdos informativos. Espaço dinâmico e atualizado para o público.
