@@ -1,5 +1,30 @@
 
 
+.fig22{
+    position: absolute;
+    top: 100px;
+    left: 1px;
+    width: 400px;
+    height: auto;
+    z-index: 10;
+}
+.fig222{
+    position: absolute;
+    top: 600px;
+    left: 1100px;
+    width: 400px;
+    height: auto;
+    z-index: 10;
+}
+.fig2222{
+    position: absolute;
+    top: 1200px;
+    left: 00px;
+    width: 300px;
+    height: auto;
+    z-index: 10;
+}
+
 .cont{
     background-color: #216f28;
     background: linear-gradient(to bottom, #216f28 0%, #03220f 100%);
@@ -17,4 +42,5 @@
     font-family: "Rubik Bubbles", sans-serif;
     max-width: 300px;
     color: #021309;
+
 }
