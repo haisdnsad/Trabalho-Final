@@ -44,3 +44,12 @@
     color: #021309;
 
 }
+@media (max-width: 800px) {
+  .fig22,
+  .fig222,
+  .fig2222 {
+    display: none;
+  }
+}
+
+
