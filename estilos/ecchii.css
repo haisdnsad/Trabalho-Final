@@ -1,6 +1,8 @@
 
 
 
+
+
 .cont{
     background-color: #a635cf;
     background: linear-gradient(to bottom, #a635cf  0%, #210323 100%);
@@ -21,4 +23,12 @@
     font-family: "Rubik Bubbles", sans-serif;
     max-width: 300px;
     color: #30073e;
+
+}
+@media (max-width: 800px) {
+  .fig,
+  .fig2,
+  .fig3 {
+    display: none;
+  }
 }
