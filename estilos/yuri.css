@@ -23,4 +23,13 @@
     font-family: "Rubik Bubbles", sans-serif;
     max-width: 300px;
     color: #52012a;
+
+}
+
+@media (max-width: 768px) {
+  .fig5,
+  .fig55,
+  .fig555 {
+    display: none;
+  }
 }
