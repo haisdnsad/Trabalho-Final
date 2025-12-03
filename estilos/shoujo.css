@@ -1,4 +1,29 @@
 
+.fig1{
+    position: absolute;
+    top: 570px;
+    left: 50px;
+    width: 400px;
+    height: auto;
+    z-index: 10;
+}
+.fig11{
+    position: absolute;
+    top: 100px;
+    left: 1160px;
+    width: 400px;
+    height: auto;
+    z-index: 10;
+}
+.fig111{
+    position: absolute;
+    top: 1150px;
+    left: 50px;
+    width: 300px;
+    height: auto;
+    z-index: 10;
+}
+
 
 
 
@@ -21,4 +46,5 @@
     font-family: "Rubik Bubbles", sans-serif;
     max-width: 300px;
     color: #470325;
+
 }
