@@ -1,6 +1,30 @@
 
 
 
+.fig6{
+    position: absolute;
+    top: 450px;
+    left: 100px;
+    width: 400px;
+    height: auto;
+    z-index: 10;
+}
+.fig66{
+    position: absolute;
+    top: 1180px;
+    left: 1190px;
+    width: 300px;
+    height: auto;
+    z-index: 10;
+}
+.fig666{
+    position: absolute;
+    top: 50px;
+    left: 990px;
+    width: 300px;
+    height: auto;
+    z-index: 10;
+}
 
 
 .cont{
@@ -26,9 +50,10 @@
 
 }
 @media (max-width: 800px) {
-  .fig,
-  .fig2,
-  .fig3 {
+  .fig6,
+  .fig66,
+  .fig666 {
     display: none;
   }
 }
+
