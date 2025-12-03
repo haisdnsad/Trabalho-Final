@@ -121,7 +121,17 @@ header nav a:hover::after{
     z-index: 999;
     color: black;
 }
-
+.cab{
+    justify-content:flex-start;
+    flex-wrap: wrap;
+    position: relative;
+}
+.cab a{
+    position: relative;
+}
+.cab a::after{
+    position: absolute;
+}
 .cab.echiii{
     
     background-color: #bf6fdf;
@@ -488,5 +498,31 @@ header nav a:hover::after{
         font-size: 4vw;
         text-align: center;
         padding: 10px 12px;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .cab {
+        flex-direction: column;   /* links ficam em coluna */
+        gap: 20px;                /* menos espaço entre eles */
+        align-items: flex-start;  /* alinhar à esquerda */
+    }
+
+    .cab a {
+        font-size: 22px;          /* fonte menor */
+        padding: 10px;            /* menos espaço interno */
+    }
+}
+
+@media (max-width: 480px) {
+    .cab {
+        padding: 10px;
+        gap: 15px;
+    }
+
+    .cab a {
+        font-size: 18px;          /* ainda menor para caber bem */
+        padding: 8px;
     }
 }
