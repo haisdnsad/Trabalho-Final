@@ -35,7 +35,3 @@ Exibição de produtos da marca, itens personalizados, roupas e acessórios. Inc
 
 **8° — Contato (Karina):**
 Ficha de contratação, formulário oficial e canais de comunicação. Espaço para dúvidas, solicitações de serviços e parcerias.
-
----
-
-Se quiser, amg, eu deixo tudo alinhado com bullets, separadores ou mais minimalista ainda. Só me fala o estilo que você quer 💕
