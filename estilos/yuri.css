@@ -1,5 +1,31 @@
 
 
+.fig5{
+    position: absolute;
+    top: 570px;
+    left: 600px;
+    width: 400px;
+    height: auto;
+    z-index: 10;
+}
+.fig55{
+    position: absolute;
+    top: 1200px;
+    left: 1px;
+    width: 300px;
+    height: auto;
+    z-index: 10;
+}
+.fig555{
+    position: absolute;
+    top: 180px;
+    left: 1190px;
+    width: 300px;
+    height: auto;
+    z-index: 10;
+}
+
+
 
 
 
@@ -33,3 +59,4 @@
     display: none;
   }
 }
+
